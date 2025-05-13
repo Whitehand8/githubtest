@@ -1,0 +1,22 @@
+name: trpg_app
+description: A TRPG navigation demo
+publish_to: 'none' # 패키지 배포 아님
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.18.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+  http: ^0.13.5
+  flutter_secure_storage: ^8.0.0 #토큰 발급을 위한 최신버전
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
