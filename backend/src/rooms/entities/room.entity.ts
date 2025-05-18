@@ -20,6 +20,12 @@ export class Room {
   @Column({ default: 1 })
   room_max: number; // 최대 인원 (1~9)
 
+  @Column({ default: 1 })
+  currentMembers: number; // 현재 접속 인원
+
+  @Column()
+  ownerId: string; // 방장 사용자 ID
+
   @CreateDateColumn({ name: 'created_at' })
   createdAt: Date; // 생성 시각
 

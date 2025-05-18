@@ -9,6 +9,8 @@ import {
 import { RoomsService } from './rooms.service';
 import { CreateRoomDto } from './dto/create-room.dto';
 import { Room } from './entities/room.entity';
+import { SearchRoomDto } from './dto/search-room.dto';
+import { Query } from '@nestjs/common/decorators/http/route-params.decorator';
 
 @Controller('rooms')
 export class RoomsController {
@@ -32,5 +34,10 @@ export class RoomsController {
     @Param('room_number', ParseIntPipe) room_number: number,
   ): Promise<Room> {
     return this.roomsService.findOne(room_number);
+  }
+
+  @Get('search')
+  search(@Query() dto: SearchRoomDto) {
+    return this.roomsService.search(dto);
   }
 }
