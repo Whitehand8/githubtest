@@ -1,5 +1,5 @@
 ## 언어 설정
-Flutter : stable 3.29.3 </br>
+Flutter : stable 3.29.3 이상 </br>
 Dart : 3.1.1 </br>
 Node.js : v22.15.0 </br>
 NestJS CLI : v10.4.8 </br>
