@@ -1,0 +1,16 @@
+# Node / NestJS
+node_modules/
+dist/
+.env
+
+# Flutter
+.dart_tool/
+.flutter-plugins
+.packages
+build/
+ios/Pods/
+**/Generated.xcconfig
+
+# IDE
+.vscode/
+EOF
